@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="main">
+            <input type="text" id="input" placeholder="0">
+
+            <div class="row">
+                <button class="btn operator1" onclick="clr()">AC</button>
+                <button class="btn operator1">C</button>
+                <button class="btn operator1" onclick="change(this)">%</button>
+                <button class="btn operator" onclick="change(this)">/</button>
+            </div>
+
+            <div class="row">
+                <button class="btn" onclick="change(this)">7</button>
+                <button class="btn" onclick="change(this)">8</button>
+                <button class="btn" onclick="change(this)">9</button>
+                <button class="btn operator" onclick="change(this)">*</button>
+            </div>
+
+            <div class="row">
+                <button class="btn" onclick="change(this)">4</button>
+                <button class="btn" onclick="change(this)">5</button>
+                <button class="btn" onclick="change(this)">6</button>
+                <button class="btn operator" onclick="change(this)">-</button>
+            </div>
+
+            <div class="row">
+                <button class="btn" onclick="change(this)">1</button>
+                <button class="btn" onclick="change(this)">2</button>
+                <button class="btn" onclick="change(this)">3</button>
+                <button class="btn operator" onclick="change(this)">+</button>
+            </div>
+
+            <div class="row">
+                <button class="btn" onclick="change(this)">0</button>
+                <button class="btn" onclick="change(this)">00</button>
+                <button class="btn" onclick="change(this)">.</button>
+                <button class="btn operator" onclick="ev(document.getElementById('input').value)">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- color pallet
+
+        bgcolor-000000
+        grey-#a5a5a5
+        button bg #333333
+        white in button #fffff7
+        Orange-#ff9f0a -->
+
+</body>
+
+</html>
